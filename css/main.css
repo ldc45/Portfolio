@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root { 
+    
+  font-family: 'Indie Flower', cursive;
+  color: white;
+  
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+}
+
+
+#home {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/src/home_bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+p {
+  border-right: solid 2px white;;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 28px;
+}
+
+/* Animation */
+p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 700ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 390px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: white;}
+  to{border-right-color: transparent;}
+}
+
+.btn{
+    padding: 6px ;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn--primary{
+ background-color: #55CBCD
+}
+
+
+.home__link{
+    text-decoration: none;
+    color: white;;
+}
+
+.navbar{
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.navbar__nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.nav__item{
+    list-style: none;
+    margin: 0 10px;
+   
+}
+
+.nav--link{
+text-decoration: none;
+color: red;
+padding: 10px;
+}
+
+.nav--link img {
+    width: 40px;
+}

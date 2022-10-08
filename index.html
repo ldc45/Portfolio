@@ -24,7 +24,7 @@
             <ul class="navbar__nav ">
                 <li class="nav__item"><a href="#home" class="nav--link"><img src="/src/home.png" alt=""></a></li>
                 <li class="nav__item"><a href="#introduction" class="nav--link"><img src="/src/avatar.png" alt=""></a></li>
-                <li class="nav__item"><a href="#skill" class="nav--link"><img src="/src/competences.png" alt=""></a></li>
+                <li class="nav__item"><a href="#expertise" class="nav--link"><img src="/src/competences.png" alt=""></a></li>
                 <li class="nav__item"><a href="#portefolio" class="nav--link"><img src="/src/portfolio.png" alt=""></a></li>  
                 <li class="nav__item"><a href="#contact" class="nav--link"><img src="/src/contact.png" alt=""></a></li>
 
@@ -46,18 +46,41 @@
             </p>
             <p class="introduction__text--download"> Vous souhaitez avoir mon CV au format PDF c'est par ici :</p>
             <!-- reseigner le fichier à télécharger -->
-            <a href="" download=""><img src="/src/dowload.png" alt="" class="introduction__img--dowload"></a>
+            <a href="" download="" ><img id="cvdownload" src="/src/dowload.png" alt="" class="introduction__img--dowload"></a>
         </div>
     </section>
 
     <!-- Section expertise -->
-    <section id="skill">
-        https://stackoverflow.com/questions/58382716/two-divs-orbiting-around-a-center-css-animation
+    <section id="expertise">
+        <div id="skill">
+            <p class="skill__text">Technologies utilisées</p>      
+        
+            <p class="skill__text">Environement de travail</p>
+        </div>
+        <div class="rotations">
+            <div id="rotations__left">
+        <p id="rotator" class="rotations__left--1"></p>
+        <p id="rotator" class="rotations__left--2"></p>
+        <p id="rotator" class="rotations__left--3"></p>
+        <p id="rotator" class="rotations__left--4"></p> 
+        <p id="rotator" class="rotations__left--5"></p> 
+        </div>
+        <div id="rotations__right">
+            <p id="rotator" class="rotations__right--1"></p>
+            <p id="rotator" class="rotations__right--2"></p>
+            <p id="rotator" class="rotations__right--3"></p>
+            <p id="rotator" class="rotations__right--4"></p> 
+            <p id="rotator" class="rotations__right--5"></p> 
+            </div>
+            
+        </div>
+       
+      
     </section>
 
     <!-- Section Portfolio -->
     <section id="portfolio">
-
+        https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/
     </section>
 
     <!-- Section contact -->
@@ -66,9 +89,21 @@
     </section>
 
     <footer>
-
+        <div >
+            <ul >
+              <li >
+                <a href="www.linkedin.com/in/ludovic-a-b5896b230" ><iconify-icon icon="bi:github"></iconify-icon>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/ldc45"><i class="bi bi-github" style="font-size: 2rem;"></i></a>
+              </li>
+  
+            </ul>
+  
+          </div>
     </footer>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/alert.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@ html,
 body {
 
   font-family: 'Indie Flower', cursive;
-  color: white;
   margin: 0;
 }
 
@@ -14,12 +13,13 @@ body {
 
 section {
   height: 100vh;
+  border-bottom: gray solid 1px;
 
 }
 
 
 #home {
-
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,4 +156,134 @@ section {
 }
 
 
+#skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.skill__text {
+font-size: 25px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+
+.rotations{
+  display: flex;
+  flex-direction: row;;
+}
+
+#rotations__left, #rotations__right {
+
+  margin-top: 100px;
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+#rotations__left{
+  border-right: grey solid ;
+}
+
+#rotations__left #rotator{
+   animation-delay: 1000ms;
+}
+
+#rotator {
+  position: relative;
+  width: 7rem;
+  height: 9rem;
+  animation: rotations 15s linear infinite; 
+  border-radius: 50%;
+  margin: 4rem;
+  
+}
+
+@keyframes rotations {
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+#rotations__right #rotator{
+  animation: left-rotations 15s linear infinite; 
+}
+
+@keyframes left-rotations  {
+  to {
+    transform: rotate(-360deg)
+  }
+}
+
+
+#rotator::before,
+#rotator::after {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  animation: inherit;
+  animation-direction: reverse;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#rotator::before {
+  top: -.25rem;
+  left: -.25rem;
+}
+
+#rotator::after {
+  bottom: -.25rem;
+  right: -.25rem;
+}
+
+/* Left icon rotation */
+
+.rotations__left--1::before{  background-image: url(https://api.iconify.design/logos/html-5.svg);}
+.rotations__left--1::after{ background-image: url(https://api.iconify.design/logos/css-3.svg);}
+
+
+.rotations__left--2::before{  background-image: url(/src/icons/logo_javascript_color.png);}
+.rotations__left--2::after{ background-image:  url(/src/icons/python.png);}
+
+.rotations__left--3::before{  background-image: url(https://api.iconify.design/logos/bootstrap.svg);}
+.rotations__left--3::after{ background-image: url(/src/icons/ruby.png);}
+
+.rotations__left--4::before{  background-image: url(/src/icons/php.png);}
+.rotations__left--4::after{ background-image: url(/src/icons/nodejs.png);}
+
+.rotations__left--5::before{  background-image: url(https://api.iconify.design/logos/sass.svg);}
+.rotations__left--5::after{ background-color:red;}
+
+/* Right icon rotation */
+
+.rotations__right--1::before{  background-image: url(/src/icons/figma.png);}
+.rotations__right--1::after{ background-image: url(/src/icons/github.png);}
+
+
+.rotations__right--2::before{  background-image: url(/src/icons/ubuntu.png);}
+.rotations__right--2::after{ background-image: url(/src/icons/windows.png);}
+
+.rotations__right--3::before{  background-image: url(https://api.iconify.design/logos/stackoverflow-icon.svg);}
+.rotations__right--3::after{ background-image: url(https://api.iconify.design/bi/git.svg?color=%23f1502f);}
+
+.rotations__right--4::before{  background-image: url(https://api.iconify.design/eos-icons/database-outlined.svg);}
+.rotations__right--4::after{  background-image: url(https://api.iconify.design/logos/mdn.svg);}
+
+.rotations__right--5::before{ background-image: url(https://api.iconify.design/logos/npm.svg);}
+.rotations__right--5::after{  background-image: url(https://api.iconify.design/bi/wordpress.svg?color=%2321759b);}
+
+
+
+/* CARD */
 

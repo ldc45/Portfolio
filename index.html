@@ -43,136 +43,185 @@
         </div>
         <div class="introduction__text">
             <h2>PRESENTATION</h2>
+            <article>
+                <div>
+                    <p>NIVEAU D'ETUDE</p>
+                    <p>BAC+2</p>
+                </div>
+                <div>
+                    <p>LANGUE</p>
+                    <p>Anglais: B1</p>
+                </div>
+                <div>
+                    <p>MES PROJETS</p>
+                    <a href="#portfolio"><img src="/src/icons/gestion-de-projet.png" alt=""></a>
+                </div>
+            </article>
             <p>
+                Intéressé par les nouvelles technologies, je suis attiré par la réalisation et le développement de
+                projets web. <br>
                 Actuellement étudiant en développement Web. Je suis à la recherche d'un stage de deux mois. <br>
                 À terme, je souhaite poursuivre mes études en tant que concepteur développeur.
             </p>
             <p class="introduction__text--download"> Vous souhaitez avoir mon CV au format PDF c'est par ici :</p>
             <!-- reseigner le fichier à télécharger -->
-            <a href="" download=""><img id="cvdownload" src="/src/dowload.png" alt=""
-                    class="introduction__img--dowload"></a>
+            <a href="" download=""><img id="cvdownload" src="/src/dowload.png" alt="télécharger"
+                    class="introduction__img--dowload "></a>
         </div>
     </section>
 
     <!-- Section expertise -->
     <section id="expertise">
-        <div id="skill">
-            <p class="skill__text">Technologies utilisées</p>
-
-            <p class="skill__text">Environement de travail</p>
-        </div>
-        <div class="rotations">
-            <div id="rotations__left">
-                <p id="rotator" class="rotations__left--1"></p>
-                <p id="rotator" class="rotations__left--2"></p>
-                <p id="rotator" class="rotations__left--3"></p>
-                <p id="rotator" class="rotations__left--4"></p>
-                <p id="rotator" class="rotations__left--5"></p>
+        <article>
+            <h2>Domaines de compétences</h2>
+            <ul><li>Maquetter une application</li>
+            <li>Réaliser une interface utilisateur web statique et
+                adaptable</li>
+            <li>Développer une interface utilisateur web dynamique</li>
+            <li>Réaliser une interface utilisateur avec une solution de
+                gestion de contenu ou e-commerce </li>
+            <li>Développer la partie back-end d’une application web
+                ou web mobile en intégrant les recommandations de
+                sécurité</li>
+            <li>Créer une base de données</li>
+            <li>Développer les composants d’accès aux données </li>
+            <li>Elaborer et mettre en œuvre des composants dans une
+                application de gestion de contenu ou e-commerce</li>
+</ul>     
+        </article>
+        <aside>
+            <div class="skills">
+                <h2>Technoligies utilisées</h2>
+                <div class="skills__icons">
+                    <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
+                    <iconify-icon class="icon" icon="vscode-icons:file-type-python"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:bootstrap"></iconify-icon>
+                    <iconify-icon class="icon" icon="vscode-icons:file-type-sass"></iconify-icon>
+                    <iconify-icon class="icon" icon="vscode-icons:file-type-php"></iconify-icon>
+                    <iconify-icon class="icon" icon="vscode-icons:file-type-ruby"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:nodejs-icon"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:javascript"></iconify-icon>
+                </div>
             </div>
-            <div id="rotations__right">
-                <p id="rotator" class="rotations__right--1"></p>
-                <p id="rotator" class="rotations__right--2"></p>
-                <p id="rotator" class="rotations__right--3"></p>
-                <p id="rotator" class="rotations__right--4"></p>
-                <p id="rotator" class="rotations__right--5"></p>
+        
+            <div class="skills">
+                <h2>Environnement de travail</h2>
+                <div class="skills__icons">
+                    <iconify-icon class="icon" icon="logos:microsoft-windows"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:stackoverflow-icon"></iconify-icon>
+                    <iconify-icon class="icon" icon="bi:git" style="color: #e84e31;"></iconify-icon>
+                    <iconify-icon class="icon" icon="akar-icons:github-fill"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:w3c"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:figma"></iconify-icon>
+                    <iconify-icon class="icon" icon="bi:wordpress" style="color: #207196;"></iconify-icon>
+                    <iconify-icon class="icon" icon="logos:ubuntu"></iconify-icon>
+                </div>
             </div>
-
-        </div>
-
+        </aside>
 
     </section>
 
     <!-- Section Portfolio -->
     <section id="portfolio">
-        <h2>Mon portefolio</h2>
+        <h2>MES PROJETS</h2>
         <div id="cards__container">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="projet 1">
-                <div class="card__details"> 
-                    <span class="tag">Html</span>
-                    <span class="tag">CSS</span>
-                    <div class="card__title">Porjet 1</div>
+                <img src="/src/projet/logo.png" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag tag--html">Html</span>
+                    <span class="tag tag--css">CSS</span>
+                    <span class="tag tag--js">JS</span>
+                    <div class="card__title">Kingdom-of-colchis</div>
+                    <p class="card__text">Création d'un site internet pour un royaume fictif.</p>
+                    <button>Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/src/projet/surf.jpg" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag tag--html">Html</span>
+                    <span class="tag tag--css">CSS</span>
+                    <span class="tag tag--bootstrap">Bootstrap</span>
+                   
+                    <div class="card__title">The surfing project</div>
+                    <p class="card__text">Pour ce projet, je devais reproduire à  la nouvelle école de surf décentralisée</p>
+                    <button>Go</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/src/projet/figma.png" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag tag--figma"><iconify-icon class="icon" icon="logos:figma"></iconify-icon></span>
+                    <div class="card__title">Maquettage</div>
+                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
+                    <button>Go</button>https://www.figma.com/file/f9v05QGRElqJHgY1K2Bg1G/Version-tablette
+                </div>
+            </div>
+            <div class="card">
+                <img src="/src/projet/programme js.jpg" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag tag--js">JS</span>
+                    <div class="card__title">Programme procédural Javascript</div>
                     <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
                     <button>Go</button>
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="projet 1">
-                <div class="card__details"> 
-                    <span class="tag">Html</span>
-                    <span class="tag">CSS</span>
-                    <div class="card__title">Porjet 1</div>
-                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
-                    <button>Go</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="projet 1">
-                <div class="card__details"> 
-                    <span class="tag">Html</span>
-                    <span class="tag">CSS</span>
-                    <div class="card__title">Porjet 1</div>
-                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
-                    <button>Go</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="projet 1">
-                <div class="card__details"> 
-                    <span class="tag">Html</span>
-                    <span class="tag">CSS</span>
-                    <div class="card__title">Porjet 1</div>
-                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
-                    <button>Go</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1536323760109-ca8c07450053" alt="projet 1">
-                <div class="card__details"> 
-                    <span class="tag">Html</span>
-                    <span class="tag">CSS</span>
-                    <div class="card__title">Porjet 1</div>
+                <img src="/src/projet/google.jpg" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag tag--html">Html</span>
+                    <span class="tag tag--css">CSS</span>
+                    <div class="card__title">Google project</div>
                     <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, quisquam.</p>
                     <button>Go</button>
                 </div>
             </div>
         </div>
-       
+
     </section>
 
     <!-- Section contact -->
     <section id="contact">
         <h3>CONTACTEZ-MOI</h3>
- <div class="coordonnees">
-    
-        <div>
-            <h3 class="adress">ADRESSE</h3>
-        <p>Saran,France</p>
+        <div class="coordonnees">
+
+            <div>
+                <h3 class="adress">ADRESSE</h3>
+                <p>Saran,France</p>
+            </div>
+            <hr>
+            <div>
+                <h3 class="phone">TELEPHONE</h3>
+                <a href="mailto:email@example.com">
+                    <p>(+33)7.72.29.04.33</p>
+                </a>
+            </div>
+            <hr>
+            <div>
+                <h3 class="mail">MAIL</h3>
+                <p>ldc45@outlook.fr</p>
+            </div>
         </div>
-        <hr>
-        <div>
-            <h3 class="phone">TELEPHONE</h3>
-            <a href="mailto:email@example.com"><p>(+33)7.72.29.04.33</p></a>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10689.826520637183!2d1.8773516478943981!3d47.94689341167451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4fa5fd8df63c1%3A0x40dc8d70537d3f0!2s45770%20Saran!5e0!3m2!1sfr!2sfr!4v1665339266874!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <hr>
-        <div>
-            <h3 class="mail">MAIL</h3>
-        <p>ldc45@outlook.fr</p>
-        </div>
- </div>
- <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10689.826520637183!2d1.8773516478943981!3d47.94689341167451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4fa5fd8df63c1%3A0x40dc8d70537d3f0!2s45770%20Saran!5e0!3m2!1sfr!2sfr!4v1665339266874!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
     </section>
     <footer>
         <div>
             <ul>
                 <li>
-                    <a href="www.linkedin.com/in/ludovic-a-b5896b230"><iconify-icon class="icon" icon="logos:linkedin-icon"></iconify-icon> </a>
-                        </li>
+                    <a href="www.linkedin.com/in/ludovic-a-b5896b230">
+                        <iconify-icon class="icon" icon="logos:linkedin-icon"></iconify-icon>
+                    </a>
+                </li>
                 <li class="list-inline-item">
-                    <a href="https://github.com/ldc45"><iconify-icon  class="icon" icon="akar-icons:github-fill" ></iconify-icon>
-               </a>
+                    <a href="https://github.com/ldc45">
+                        <iconify-icon class="icon" icon="akar-icons:github-fill"></iconify-icon>
+                    </a>
                 </li>
 
             </ul>

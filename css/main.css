@@ -13,6 +13,7 @@ body {
 
 section {
   height: 100vh;
+  width: 100vw;
   border-bottom: gray solid 1px;
 
 }
@@ -150,13 +151,97 @@ section {
   line-height: 30px;
 }
 
-.introduction__text--download {
-  text-align: center;
-  margin-top: 100px;
+.introduction__text article {
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+margin-bottom: 60px;
+}
+
+.introduction__text article img{
+  width: 50px;
+}
+
+article div {
+ background-color: rgba(254, 145, 116, 0.5);
+ padding: 0 10px;
+ border-radius: 10%; 
+ margin-top: 15px;
+}
+
+article div p:first-child {
+font-weight: bold;
+}
+ 
+article div:nth-child(2n){
+  background-color: rgba(253, 253, 90, 0.5);
+}
+
+article div:last-child{
+  background-color: rgba(23, 53, 150, 0.5);
 }
 
 
-#skill {
+
+.introduction__text--download {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* EXPERTISE */
+
+#expertise{
+display: flex;
+align-items: center;
+}
+
+#expertise article{
+  margin-left: 50px;
+}
+
+#expertise article, #expertise aside{
+  width: 50vw;
+}
+#expertise aside{
+ text-align: center;
+}
+#expertise ul{
+font-size: 23px;
+line-height: 40px;
+}
+
+.skills{
+  margin: 100px 0;
+}
+
+.skills__icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills__icons .icon {
+font-size: 50px;
+margin: 0 15px;
+animation: float 3s linear infinite;
+}
+
+
+@keyframes float {
+  0%{
+    transform: translateY(5px);
+    
+  }
+  25%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(5px);
+  }
+} 
+
+/* #skill {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -245,43 +330,8 @@ text-decoration: underline;
 #rotator::after {
   bottom: -.25rem;
   right: -.25rem;
-}
+} */
 
-/* Left icon rotation */
-
-.rotations__left--1::before{  background-image: url(https://api.iconify.design/logos/html-5.svg);}
-.rotations__left--1::after{ background-image: url(https://api.iconify.design/logos/css-3.svg);}
-
-
-.rotations__left--2::before{  background-image: url(/src/icons/logo_javascript_color.png);}
-.rotations__left--2::after{ background-image:  url(/src/icons/python.png);}
-
-.rotations__left--3::before{  background-image: url(https://api.iconify.design/logos/bootstrap.svg);}
-.rotations__left--3::after{ background-image: url(/src/icons/ruby.png);}
-
-.rotations__left--4::before{  background-image: url(/src/icons/php.png);}
-.rotations__left--4::after{ background-image: url(/src/icons/nodejs.png);}
-
-.rotations__left--5::before{  background-image: url(https://api.iconify.design/logos/sass.svg);}
-.rotations__left--5::after{ background-color:red;}
-
-/* Right icon rotation */
-
-.rotations__right--1::before{  background-image: url(/src/icons/figma.png);}
-.rotations__right--1::after{ background-image: url(/src/icons/github.png);}
-
-
-.rotations__right--2::before{  background-image: url(/src/icons/ubuntu.png);}
-.rotations__right--2::after{ background-image: url(/src/icons/windows.png);}
-
-.rotations__right--3::before{  background-image: url(https://api.iconify.design/logos/stackoverflow-icon.svg);}
-.rotations__right--3::after{ background-image: url(https://api.iconify.design/bi/git.svg?color=%23f1502f);}
-
-.rotations__right--4::before{  background-image: url(https://api.iconify.design/eos-icons/database-outlined.svg);}
-.rotations__right--4::after{  background-image: url(https://api.iconify.design/logos/mdn.svg);}
-
-.rotations__right--5::before{ background-image: url(https://api.iconify.design/logos/npm.svg);}
-.rotations__right--5::after{  background-image: url(https://api.iconify.design/bi/wordpress.svg?color=%2321759b);}
 
 
 
@@ -294,9 +344,7 @@ text-decoration: underline;
 }
 
 #cards__container {
-  
   display: flex;
-  border: solid 1px blueviolet;
 }
 
 .card:hover {
@@ -310,7 +358,7 @@ transition: 0.4s ease-out;
   padding: 8px;
   border-radius: 12px;
   background-color: #EAEFF1;
-  border: solid 1px red;
+  box-shadow: 10px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card>img {
@@ -325,11 +373,39 @@ transition: 0.4s ease-out;
 }
 .tag {
   padding: 4px 8px;
-  border: 1px solid white;
   border-radius: 50px;
   font-size: 12px;
   font-weight: 600;
   color: #788697;
+}
+
+.tag--html{
+  background-color: #E44D26;
+  color: white;
+}
+
+.tag--css{
+  background-color: #254BDD;
+  color: white;
+}
+
+.tag--js{
+  background-color: #EFD81D;
+  color: black;
+}
+
+.tag--bootstrap{
+  background-color: #760EEF;
+  color: white;
+}
+
+.tag--figma{
+  padding: 0;
+}
+
+.tag .icon{
+font-size: 20px;
+
 }
 
 .card__title {  
@@ -406,8 +482,7 @@ color: #E0EFFF;
 
 /* FOOTER */
 
-.icon {
-  font-size: 50px;
-  
+footer div ul{
+  display: flex;
+  justify-content: space-between;
 }
-

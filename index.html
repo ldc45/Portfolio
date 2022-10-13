@@ -11,16 +11,19 @@
 </head>
 
 <body>
+    
+
 
     <!-- Section Accueil -->
-    <section id="home">
+    <section data-section="0" id="home">
         <div>
             <h1>AGESILAS Ludovic,</h1>
             <p class="home__text">Etudiant en Développement Web</p>
             <a href="#introduction" class="home__link btn btn--primary"> Me connaitre</a>
         </div>
 
-        <nav class="navbar">
+        
+    <nav class="navbar">
             <ul class="navbar__nav ">
                 <li class="nav__item"><a href="#home" class="nav--link"><img src="/src/home.png" alt=""></a></li>
                 <li class="nav__item"><a href="#introduction" class="nav--link"><img src="/src/avatar.png" alt=""></a>
@@ -33,11 +36,10 @@
 
             </ul>
         </nav>
-
     </section>
 
     <!-- Section Présentation -->
-    <section id="introduction">
+    <section data-section="1" id="introduction">
         <div>
             <img src="/src/profile.png" alt="photo-profil" class="introduction__img">
         </div>
@@ -71,7 +73,7 @@
     </section>
 
     <!-- Section expertise -->
-    <section id="expertise">
+    <section data-section="2" id="expertise">
         <h2>MES COMPETENCES</h2>
         <div class="expertise__contents">
             <article>
@@ -128,15 +130,15 @@
     </section>
 
     <!-- Section Portfolio -->
-    <section id="portfolio">
+    <section data-section="3" id="portfolio">
         <h2>MES PROJETS</h2>
         <div id="cards__container">
             <div class="card">
                 <img src="/src/projet/logo.png" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag tag--html">Html</span>
-                    <span class="tag tag--css">CSS</span>
-                    <span class="tag tag--js">JS</span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:javascript"></iconify-icon></span>
                     <div class="card__title">Kingdom-of-colchis</div>
                     <p class="card__text">Création d'un site internet pour un royaume fictif.</p>
                    <a href="https://github.com/ldc45/Kingdom-of-colchis"><button>Go</button></a> 
@@ -145,9 +147,9 @@
             <div class="card">
                 <img src="/src/projet/surf.jpg" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag tag--html">Html</span>
-                    <span class="tag tag--css">CSS</span>
-                    <span class="tag tag--bootstrap">Bootstrap</span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
+                    <span class="tag"> <iconify-icon class="icon" icon="logos:bootstrap"></iconify-icon></span>
 
                     <div class="card__title">The surfing project</div>
                     <p class="card__text">Pour ce projet, je devais reproduire à la nouvelle école de surf décentralisée
@@ -168,7 +170,7 @@
             <div class="card">
                 <img src="/src/projet/programme js.jpg" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag tag--js">JS</span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:javascript"></iconify-icon></span>
                     <div class="card__title">Programme procédural Javascript</div>
                     <p class="card__text">Transposition des algorithmes en code JavaScript dans une série d'exercices.</p>
                    <a href="https://github.com/ldc45/Programme-Javascript"><button>Go</button></a> 
@@ -177,8 +179,8 @@
             <div class="card">
                 <img src="/src/projet/google.jpg" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag tag--html">Html</span>
-                    <span class="tag tag--css">CSS</span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
+                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
                     <div class="card__title">Google project</div>
                     <p class="card__text">Elaboration d'un clone de Google</p>
                    <a href="https://github.com/ldc45/Google-project"><button>Go</button></a> 
@@ -189,7 +191,7 @@
     </section>
 
     <!-- Section contact -->
-    <section id="contact">
+    <section data-section="4" id="contact">
         <h2>CONTACTEZ-MOI</h2>
         <div class="contact__content">
             <div class="coordonnees">

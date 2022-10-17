@@ -8,35 +8,37 @@
 
     <!-- AOS stylesheet -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <svg height="100%" width="100%">
-        <clipPath id="text-overlay">
-            <text x="50%" y="50%" fill="red" text-anchor="middle">
-BIENVENUE
-</text>
-</clipPath>
-    </svg>
-    <video src="src/pexels-free-creative-stuff-5649207.mp4" autoplay loop muted></video>
+    <section id="welcome" class="puff-in-center"> 
+        <svg height="100%" width="100%">
+            <clipPath id="text-overlay">
+                <text x="50%" y="50%" fill="red" text-anchor="middle">
+                    BIENVENUE           
+                </text>
+                <text data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000" x="50%" y="80%" fill="red" text-anchor="middle">Scroll-down</text>
+            </clipPath>
+        </svg>
+
+        <video src="src/pexels-free-creative-stuff-5649207.mp4" autoplay loop muted></video>
+    </section>
 
     <!-- Section Accueil -->
-    <section  class="active" id="home">
-        <div data-aos="zoom-in" data-aos-delay="1000"  data-aos-duration="1000" >
+    <section class="active" id="home">
+        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
             <h1>AGESILAS Ludovic,</h1>
             <p class="home__text">Étudiant en Développement Web</p>
             <a href="#introduction" class="home__link btn btn--primary"> Me connaître</a>
         </div>
 
-        
-    <nav  class="navbar ">
+
+        <nav class="navbar ">
             <ul class="navbar__nav">
                 <li class="nav__item"><a href="#home" class="nav--link"><img src="src/home.png" alt=""></a></li>
                 <li class="nav__item"><a href="#introduction" class="nav--link"><img src="src/avatar.png" alt=""></a>
@@ -52,11 +54,11 @@ BIENVENUE
     </section>
 
     <!-- Section Présentation -->
-    <section  id="introduction">
-        <div data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000">
+    <section id="introduction">
+        <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <img src="src/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="photo-profil" class="introduction__img">
         </div>
-        <div class="introduction__text" data-aos="fade-left" data-aos-delay="1000"  data-aos-duration="1000">
+        <div class="introduction__text" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
             <h2>PRESENTATION</h2>
             <article>
                 <div>
@@ -80,16 +82,16 @@ BIENVENUE
             </p>
             <p class="introduction__text--download"> Vous souhaitez avoir mon CV au format PDF c'est par ici :</p>
             <!-- renseigner le fichier à télécharger -->
-            <a href="" download=""><img id="cvdownload" src="src/dowload.png" alt="télécharger"
-                    class="introduction__img--download "></a>
+            <a href="src/CV_Ludovic_AGESILAS.pdf" download="CV_Ludovic_AGESILAS.pdf"><img id="cvdownload"
+                    src="src/dowload.png" alt="télécharger" class="introduction__img--download "></a>
         </div>
     </section>
 
     <!-- Section expertise -->
-    <section  id="expertise">
+    <section id="expertise">
         <h2>MES COMPETENCES</h2>
-        <div class="expertise__contents" >
-            <article data-aos="fade-left" data-aos-delay="500"  data-aos-duration="1000">
+        <div class="expertise__contents">
+            <article data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Domaines de compétences</h2>
                 <ul>
                     <li>Maquetter une application</li>
@@ -99,7 +101,7 @@ BIENVENUE
                     <li>Réaliser une interface utilisateur avec une solution de
                         gestion de contenu ou e-commerce </li>
                     <li>Développer la partie back-end d’une application web
-                         en intégrant les recommandations de
+                        en intégrant les recommandations de
                         sécurité</li>
                     <li>Créer une base de données</li>
                     <li>Développer les composants d’accès aux données </li>
@@ -110,7 +112,7 @@ BIENVENUE
             <aside>
                 <div class="skills">
                     <h2>Technologies utilisées</h2>
-                    <div class="skills__icons" data-aos="fade-down-right"  data-aos-delay="0"  data-aos-duration="1000">
+                    <div class="skills__icons" data-aos="fade-down-right" data-aos-delay="0" data-aos-duration="1000">
                         <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
                         <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
                         <iconify-icon class="icon" icon="vscode-icons:file-type-python"></iconify-icon>
@@ -125,7 +127,7 @@ BIENVENUE
 
                 <div class="skills">
                     <h2>Environnement de travail</h2>
-                    <div class="skills__icons" data-aos="fade-down-left" data-aos-delay="500"  data-aos-duration="1000">
+                    <div class="skills__icons" data-aos="fade-down-left" data-aos-delay="500" data-aos-duration="1000">
                         <iconify-icon class="icon" icon="logos:microsoft-windows"></iconify-icon>
                         <iconify-icon class="icon" icon="logos:stackoverflow-icon"></iconify-icon>
                         <iconify-icon class="icon" icon="bi:git" style="color: #e84e31;"></iconify-icon>
@@ -143,34 +145,46 @@ BIENVENUE
     </section>
 
     <!-- Section Portfolio -->
-    <section  id="portfolio">
+    <section id="portfolio">
         <h2>MES PROJETS</h2>
         <div id="cards__container">
-            <div class="card" data-aos="fade-up" data-aos-delay="0"  data-aos-duration="1000">
+            <div class="card" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
                 <img src="src/projet/logo.png" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
-                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
-                    <span class="tag"><iconify-icon class="icon" icon="logos:javascript"></iconify-icon></span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
+                    </span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
+                    </span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:javascript"></iconify-icon>
+                    </span>
                     <div class="card__title">Kingdom-of-colchis</div>
                     <p class="card__text">Création d'un site internet pour un royaume fictif.</p>
-                   <a href="https://github.com/ldc45/Kingdom-of-colchis"><button>Go</button></a> 
+                    <a href="https://github.com/ldc45/Kingdom-of-colchis"><button>Go</button></a>
                 </div>
             </div>
-            <div class="card" data-aos="fade-down" data-aos-delay="500"  data-aos-duration="1000">
+            <div class="card" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
                 <img src="src/projet/surf.jpg" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
-                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
-                    <span class="tag"> <iconify-icon class="icon" icon="logos:bootstrap"></iconify-icon></span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
+                    </span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
+                    </span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:bootstrap"></iconify-icon>
+                    </span>
 
                     <div class="card__title">The surfing project</div>
                     <p class="card__text">Pour ce projet, je devais reproduire à la nouvelle école de surf décentralisée
                     </p>
-                   <a href="https://github.com/ldc45/The-Surfing-Project"><button>Go</button></a> 
+                    <a href="https://github.com/ldc45/The-Surfing-Project"><button>Go</button></a>
                 </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="1000"  data-aos-duration="1000">
+            <div class="card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
                 <img src="src/projet/figma.png" alt="projet 1">
                 <div class="card__details">
                     <span class="tag tag--figma">
@@ -178,25 +192,33 @@ BIENVENUE
                     </span>
                     <div class="card__title">Maquettage</div>
                     <p class="card__text">Réalisation d'une maquette pour un site de formation</p>
-                   <a href="https://www.figma.com/file/f9v05QGRElqJHgY1K2Bg1G/Version-tablette"><button>Go</button></a> </div>
-            </div>
-            <div class="card" data-aos="fade-down" data-aos-delay="1500"  data-aos-duration="1000">
-                <img src="src/projet/programme js.jpg" alt="projet 1">
-                <div class="card__details">
-                    <span class="tag"><iconify-icon class="icon" icon="logos:javascript"></iconify-icon></span>
-                    <div class="card__title">Programme procédural Javascript</div>
-                    <p class="card__text">Transposition des algorithmes en code JavaScript dans une série d'exercices.</p>
-                   <a href="https://github.com/ldc45/Programme-Javascript"><button>Go</button></a> 
+                    <a href="https://www.figma.com/file/f9v05QGRElqJHgY1K2Bg1G/Version-tablette"><button>Go</button></a>
                 </div>
             </div>
-            <div class="card" data-aos="fade-up" data-aos-delay="2000"  data-aos-duration="1000">
+            <div class="card" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000">
+                <img src="src/projet/programme js.jpg" alt="projet 1">
+                <div class="card__details">
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:javascript"></iconify-icon>
+                    </span>
+                    <div class="card__title">Programme procédural Javascript</div>
+                    <p class="card__text">Transposition des algorithmes en code JavaScript dans une série d'exercices.
+                    </p>
+                    <a href="https://github.com/ldc45/Programme-Javascript"><button>Go</button></a>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
                 <img src="src/projet/google.jpg" alt="projet 1">
                 <div class="card__details">
-                    <span class="tag"><iconify-icon class="icon" icon="logos:html-5"></iconify-icon></span>
-                    <span class="tag"><iconify-icon class="icon" icon="logos:css-3"></iconify-icon></span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
+                    </span>
+                    <span class="tag">
+                        <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
+                    </span>
                     <div class="card__title">Google project</div>
                     <p class="card__text">Elaboration d'un clone de Google</p>
-                   <a href="https://github.com/ldc45/Google-project"><button>Go</button></a> 
+                    <a href="https://github.com/ldc45/Google-project"><button>Go</button></a>
                 </div>
             </div>
         </div>
@@ -204,10 +226,10 @@ BIENVENUE
     </section>
 
     <!-- Section contact -->
-    <section  id="contact">
+    <section id="contact">
         <h2>CONTACTEZ-MOI</h2>
         <div class="contact__content">
-            <div class="coordonnees" data-aos="flip-up"  data-aos-delay="0"  data-aos-duration="1000">
+            <div class="coordonnees" data-aos="flip-up" data-aos-delay="0" data-aos-duration="1000">
                 <div>
                     <h3 class="adress">ADRESSE</h3>
                     <p>Saran, France</p>
@@ -227,7 +249,7 @@ BIENVENUE
                     </a>
                 </div>
             </div>
-            <div class="social-network" data-aos="flip-up"  data-aos-delay="500"  data-aos-duration="1000">
+            <div class="social-network" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1000">
 
                 <a href="https://www.linkedin.com/in/ludovic-a-b5896b230">
                     <iconify-icon class="icon" icon="logos:linkedin-icon"></iconify-icon>
@@ -239,7 +261,7 @@ BIENVENUE
                 </a>
 
             </div>
-            <div class="map" data-aos="flip-down"  data-aos-delay="1000"  data-aos-duration="1000">
+            <div class="map" data-aos="flip-down" data-aos-delay="1000" data-aos-duration="1000">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10689.826520637183!2d1.8773516478943981!3d47.94689341167451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4fa5fd8df63c1%3A0x40dc8d70537d3f0!2s45770%20Saran!5e0!3m2!1sfr!2sfr!4v1665339266874!5m2!1sfr!2sfr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -253,7 +275,7 @@ BIENVENUE
     <!-- Script et initialisation AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

@@ -49,7 +49,7 @@ h1,h2,h3{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url('/src/home_bg.jpg');
+  background-image: url('../src/home_bg.jpg');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -589,12 +589,12 @@ color: black;
 }
 
 .adress::before{
-    background-image: url('/src/icons/adresse.png');
+    background-image: url('../src/icons/adresse.png');
 }
-.phone::before{  background-image: url('/src/icons/smartphones.png');
+.phone::before{  background-image: url('../src/icons/smartphones.png');
 }
 
-.mail::before{ background-image: url('/src/icons/e-mail.png');
+.mail::before{ background-image: url('../src/icons/e-mail.png');
 }
 
 #contact p{

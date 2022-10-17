@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- AOS stylesheet -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
@@ -17,12 +17,12 @@
 
 <body>
     <section id="welcome" class="puff-in-center"> 
-        <svg height="100%" width="100%">
+        <svg>
             <clipPath id="text-overlay">
                 <text x="50%" y="50%" fill="red" text-anchor="middle">
                     BIENVENUE           
                 </text>
-                <text data-aos="zoom-in" data-aos-delay="3000" data-aos-duration="1000" x="50%" y="80%" fill="red" text-anchor="middle">Scroll-down</text>
+                <text data-aos="zoom-in" data-aos-delay="3500" data-aos-duration="1000" x="50%" y="80%" fill="red" text-anchor="middle">Scroll-down</text>
             </clipPath>
         </svg>
 
@@ -30,8 +30,8 @@
     </section>
 
     <!-- Section Accueil -->
-    <section class="active" id="home">
-        <div data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+    <section id="home">
+        <div >
             <h1>AGESILAS Ludovic,</h1>
             <p class="home__text">Étudiant en Développement Web</p>
             <a href="#introduction" class="home__link btn btn--primary"> Me connaître</a>
@@ -40,14 +40,14 @@
 
         <nav class="navbar ">
             <ul class="navbar__nav">
-                <li class="nav__item"><a href="#home" class="nav--link"><img src="src/home.png" alt=""></a></li>
-                <li class="nav__item"><a href="#introduction" class="nav--link"><img src="src/avatar.png" alt=""></a>
+                <li class="nav__item"><a href="#home" class="nav--link"><img src="src/home.png" alt="Accueil"></a></li>
+                <li class="nav__item"><a href="#introduction" class="nav--link"><img src="src/avatar.png" alt="profile"></a>
                 </li>
-                <li class="nav__item"><a href="#expertise" class="nav--link"><img src="src/competences.png" alt=""></a>
+                <li class="nav__item"><a href="#expertise" class="nav--link"><img src="src/competences.png" alt="compétences"></a>
                 </li>
-                <li class="nav__item"><a href="#portfolio" class="nav--link"><img src="src/portfolio.png" alt=""></a>
+                <li class="nav__item"><a href="#portfolio" class="nav--link"><img src="src/portfolio.png" alt="portfolio"></a>
                 </li>
-                <li class="nav__item"><a href="#contact" class="nav--link"><img src="src/contact.png" alt=""></a></li>
+                <li class="nav__item"><a href="#contact" class="nav--link"><img src="src/contact.png" alt="contact"></a></li>
 
             </ul>
         </nav>
@@ -55,11 +55,11 @@
 
     <!-- Section Présentation -->
     <section id="introduction">
-        <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-            <img src="src/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="photo-profil" class="introduction__img">
+        <h2>PRESENTATION</h2><div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+            <img src="src/domenico-loia-hGV2TfOh0ns-unsplash.jpg" alt="photo-intro" class="introduction__img">
         </div>
         <div class="introduction__text" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
-            <h2>PRESENTATION</h2>
+            
             <article>
                 <div>
                     <p>NIVEAU D'ETUDE</p>
@@ -71,7 +71,7 @@
                 </div>
                 <div>
                     <p>MES PROJETS</p>
-                    <a href="#portfolio"><img src="src/icons/gestion-de-projet.png" alt=""></a>
+                    <a href="#portfolio"><img src="src/icons/gestion-de-projet.png" alt="icon-projet"></a>
                 </div>
             </article>
             <p>
@@ -162,11 +162,11 @@
                     </span>
                     <div class="card__title">Kingdom-of-colchis</div>
                     <p class="card__text">Création d'un site internet pour un royaume fictif.</p>
-                    <a href="https://github.com/ldc45/Kingdom-of-colchis"><button>Go</button></a>
+                    <a href="https://github.com/ldc45/Kingdom-of-colchis" class="button">Go</a>
                 </div>
             </div>
             <div class="card" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
-                <img src="src/projet/surf.jpg" alt="projet 1">
+                <img src="src/projet/surf.jpg" alt="projet 2">
                 <div class="card__details">
                     <span class="tag">
                         <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
@@ -181,34 +181,34 @@
                     <div class="card__title">The surfing project</div>
                     <p class="card__text">Pour ce projet, je devais reproduire à la nouvelle école de surf décentralisée
                     </p>
-                    <a href="https://github.com/ldc45/The-Surfing-Project"><button>Go</button></a>
+                    <a href="https://github.com/ldc45/The-Surfing-Project" class="button">Go</a>
                 </div>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-                <img src="src/projet/figma.png" alt="projet 1">
+                <img src="src/projet/figma.png" alt="projet 3">
                 <div class="card__details">
                     <span class="tag tag--figma">
                         <iconify-icon class="icon" icon="logos:figma"></iconify-icon>
                     </span>
                     <div class="card__title">Maquettage</div>
                     <p class="card__text">Réalisation d'une maquette pour un site de formation</p>
-                    <a href="https://www.figma.com/file/f9v05QGRElqJHgY1K2Bg1G/Version-tablette"><button>Go</button></a>
+                    <a href="https://www.figma.com/file/f9v05QGRElqJHgY1K2Bg1G/Version-tablette" class="button">Go</a>
                 </div>
             </div>
             <div class="card" data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000">
-                <img src="src/projet/programme js.jpg" alt="projet 1">
+                <img src="src/projet/programmejs.jpg" alt="projet 4">
                 <div class="card__details">
                     <span class="tag">
                         <iconify-icon class="icon" icon="logos:javascript"></iconify-icon>
                     </span>
-                    <div class="card__title">Programme procédural Javascript</div>
+                    <div class="card__title">Programme JavaScript</div>
                     <p class="card__text">Transposition des algorithmes en code JavaScript dans une série d'exercices.
                     </p>
-                    <a href="https://github.com/ldc45/Programme-Javascript"><button>Go</button></a>
+                    <a href="https://github.com/ldc45/Programme-Javascript" class="button">Go</a>
                 </div>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
-                <img src="src/projet/google.jpg" alt="projet 1">
+                <img src="src/projet/google.jpg" alt="projet 4">
                 <div class="card__details">
                     <span class="tag">
                         <iconify-icon class="icon" icon="logos:html-5"></iconify-icon>
@@ -217,8 +217,8 @@
                         <iconify-icon class="icon" icon="logos:css-3"></iconify-icon>
                     </span>
                     <div class="card__title">Google project</div>
-                    <p class="card__text">Elaboration d'un clone de Google</p>
-                    <a href="https://github.com/ldc45/Google-project"><button>Go</button></a>
+                    <p class="card__text">Elaboration d'un clone de Google afin de s'exercer</p>
+                    <a href="https://github.com/ldc45/Google-project" class="button">Go</a>
                 </div>
             </div>
         </div>

@@ -508,7 +508,8 @@ article div:last-child {
  
 }
 .homebg img{
-  width: 100%;
+  width: 90%;
+  max-width: 500px;
  border-radius: 10px;
 }
 section{
